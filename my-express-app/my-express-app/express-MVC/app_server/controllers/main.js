@@ -7,4 +7,4 @@ const kontak =(req,res)=>{
 	res.render('kontak',{title:'express'});
 };
 
-module.exports = { index, kontak }; 
+module.exports = { index, kontak };
