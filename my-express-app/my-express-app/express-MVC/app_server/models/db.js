@@ -10,11 +10,11 @@ mongoose.connection.on("connected",()=>{
     console.log("Connected to MongoDB");
 });
 
-mongoose.connection.on("error",()=>{
+mongoose.connection.on("error",(Error)=>{
     console.log("Connection Error: "+error);
     });
 
  mongoose.connection.on("disconnected",()=>{
     console.log("Disconnected from MongoDB");
     });   
-    require("./mahasiswa");
+   require("./mahasiswa");
